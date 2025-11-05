@@ -6,6 +6,18 @@
     <title>Barch example</title>
 </head>
 <body>
+    <h1>Barch example</h1>
+    <script src="https://cdn.jsdelivr.net/npm/barch@0.1.0/dist/barch.min.js"></script>
+    <script>
+        const data = [10, 20, 30, 40, 50];
+        const chart = Barch.createChart({
+            data: data,
+            width: 500,
+            height: 300,
+            barColor: 'steelblue'
+        });
+        document.body.appendChild(chart);
+    </script>
     
 </body>
 </html>
